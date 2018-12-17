@@ -18,3 +18,6 @@ def console_out(logFilename):
     formatter = logging.Formatter('%(asctime)s %(filename)s : %(levelname)s %(message)s')
     console.setFormatter(formatter)
     logging.getLogger().addHandler(console)
+
+if __name__ == "__main__":
+    console_out('loggine.log')
